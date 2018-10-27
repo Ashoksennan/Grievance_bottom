@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7386D5</color>
+    <color name="colorPrimaryDark">#0f5998</color>
+    <color name="colorAccent">#4075a2</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="etown_bg">#7386D5</color>
+    <color name="heading">#384fae</color>
+    <color name="colorNavText">#FFFF</color>
+    <color name="warningcolor">#ac0404</color>
+    <color name="background">#dddddd</color>
+    <color name="white">#FFFF</color>
+    <color name="normalcolor">#6b6b6b</color>
+</resources>
