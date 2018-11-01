@@ -105,9 +105,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             @Override
             public void onClick(View v) {
                 if(selectedTab.equalsIgnoreCase("Received")){
-                    Toast.makeText(MainActivity.this, "clicked", Toast.LENGTH_SHORT).show();
                     if(CommanDatas.sReceivedList.size()>0){
-                        Toast.makeText(MainActivity.this, "has received", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, "has received", Toast.LENGTH_SHORT).show();
                         filteredDatas.setCatagory(selectedTab);
                         EventBus.getDefault().postSticky(filteredDatas);
                         sheetBehavior.setHideable(true);

@@ -48,8 +48,11 @@ IReceivedInterface.view view;
             @Override
             public void onResponse(Call<List<GrievanceData>> call, Response<List<GrievanceData>> response) {
                 grievanceData.addAll(response.body());
-                CommanDatas.sReceivedList.addAll(grievanceData);
-                Log.e("xcbh=>",response.body().get(0).getComplainerName());
+                if(response.body().size()>0){
+                    CommanDatas.sReceivedList.addAll(grievanceData);
+                }else{
+                    CommanDatas.sReceivedList.clear();
+                }
                 view.setRecyclerViewWithitsData(grievanceData);
             }
 
